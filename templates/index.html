@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Named Entity Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/site.css">
+  </head>
+  <body>
+    <div class="container p-3" id="app">
+
+      <div class="row my-4">
+        <h1 id="app-title">Named Entity Finder</h1>
+      </div>
+
+      <div class="row my-3">
+        <div id="labeled-doc" data-test-id="labeled-doc">
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <button
+              class="btn btn-outline-primary"
+              type="button"
+              id="find-button"
+              data-test-id="find-button"
+              >
+              Find Named Entities
+            </button>
+          </div>
+          <input id="input-text" data-test-id="input-text" class="form-control">
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <table id="ner-table" data-test-id="ner-table" class="table table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>
+                Entity
+              </th>
+              <th>
+                Type
+              </th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="static/ner.js"></script>
+</html>
